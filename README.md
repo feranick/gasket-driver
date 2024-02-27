@@ -14,3 +14,8 @@ From the top level directory, execute:
 ```
 debuild -us -uc -tc -b
 ```
+
+To install:
+```
+sudo dpkg -i gasket-dkms_1.0-18_all.deb
+```
