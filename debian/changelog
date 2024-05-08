@@ -1,3 +1,13 @@
+gasket-dkms (1.0-18.2) unstable; urgency=medium
+
+  * Rebuilt for latest commits:
+    - Amend use of class_create() for kernels >= 6.4
+    - Fixes google#14 and google#15 by replacing the version-based check for DMA_BUF necessity.
+      Solves incompatibility with backports in 5.1x.x (RedHat/Debian) kernels.
+    - fixed eventfd_signal for kernels >= 6.8
+
+ -- Nicola Ferralis <feranick@hotmail.com>  Wed, 08 May 2024 15:26:09 -0400
+
 gasket-dkms (1.0-18) unstable; urgency=low
 
   * Import DMA_BUF symbol namespace for kernels >= 5.16.
